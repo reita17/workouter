@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang ="ja">
   <head>
     <title>Work Outer</title>
     <%= csrf_meta_tags %>
@@ -10,19 +10,16 @@
   </head>
 
 <body>
-  <header>
-  <div class = header_title>Work Outer</div>
-      <div class = header_list>
-        <p>About</p>
-        <p>Post</p>
-        <p>My Account</p>
-        <p>Login</p>
-      </div>
-  </header>
+<%#  背景画像 %>
+  <div class = body>
+  <div class = body_img>
+
+  <%= render 'shared/header' %>
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
     <%= yield %>
+    </div>
   </body>
 </html>

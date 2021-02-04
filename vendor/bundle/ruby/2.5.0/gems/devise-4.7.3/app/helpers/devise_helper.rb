@@ -2,13 +2,13 @@
 
 module DeviseHelper
   # Retain this method for backwards compatibility, deprecated in favor of modifying the
-  # devise/shared/error_messages partial.
+  # shared/error_messages partial.
   def devise_error_messages!
     ActiveSupport::Deprecation.warn <<-DEPRECATION.strip_heredoc
       [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
       removed in the next major version.
 
-      Devise now uses a partial under "devise/shared/error_messages" to display
+      Devise now uses a partial under "shared/error_messages" to display
       error messages by default, and make them easier to customize. Update your
       views changing calls from:
 
@@ -16,7 +16,7 @@ module DeviseHelper
 
       to:
 
-          <%= render "devise/shared/error_messages", resource: resource %>
+          <%= render "shared/error_messages", resource: resource %>
 
       To start customizing how errors are displayed, you can copy the partial
       from devise to your `app/views` folder. Alternatively, you can run
@@ -25,6 +25,6 @@ module DeviseHelper
 
     return "" if resource.errors.empty?
 
-    render "devise/shared/error_messages", resource: resource
+    render "shared/error_messages", resource: resource
   end
 end

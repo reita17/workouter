@@ -1,0 +1,35 @@
+.container {
+  font-family: Audiowide;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  font-size: 20px;
+  .header_logo {
+    margin-left: 100px;
+  }
+
+  .header_nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+    &_navbar {
+      margin-left: 40px;
+      &_login {
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        margin-right: 40px;
+      }
+
+      .navtag {
+        text-decoration: none;
+        color: black;
+        &_login {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

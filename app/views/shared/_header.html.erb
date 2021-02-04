@@ -1,0 +1,43 @@
+<%# ヘッダー %>
+      <div class = container>
+
+<%# ヘッダー ロゴ %>
+          <div class = header_logo>
+            <%= link_to image_tag("logo.png"), "#"%>
+          </div>
+
+<%# ヘッダー ナビゲーション %>
+        <div class = header_nav>
+          <div class = header_nav_navbar >
+            <%= link_to "Home", "#", class: "navtag"%>
+          </div>
+
+          <div class = header_nav_navbar >
+            <%= link_to "SNS", "#", class: "navtag"%>
+          </div>
+
+<%
+=begin
+%>
+          <div class = header_nav_navbar >
+            <%= link_to "Item", "#", class: "navtag"%>
+          </div>
+<%
+=end
+%>
+
+          <div class = header_nav_navbar >
+            <%= link_to "Post", "#", class: "navtag"%>
+          </div>
+
+          <div class = header_nav_navbar >
+            <%= link_to "MyAccount", "#", class: "navtag"%>
+          </div>
+
+          <div class = header_nav_navbar >
+            <div class = header_nav_navbar_login >
+              <%= link_to "Login", "#", class: "navtag, navtag_login"%>
+            </div>
+          </div>
+  </div>
+  </div>

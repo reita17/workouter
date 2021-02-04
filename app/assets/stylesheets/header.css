@@ -1,0 +1,40 @@
+.container {
+  font-family: Audiowide;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  font-size: 20px;
+}
+
+.container .header_logo {
+  margin-left: 100px;
+}
+
+.container .header_nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.container .header_nav_navbar {
+  margin-left: 40px;
+}
+
+.container .header_nav_navbar_login {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+.container .header_nav_navbar .navtag {
+  text-decoration: none;
+  color: black;
+}
+
+.container .header_nav_navbar .navtag_login {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=header.css.map */
